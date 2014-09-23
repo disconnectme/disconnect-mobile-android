@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="engine_interface_custom_rules" default="debug">
+<target name="config-logging-on">
+<!-- Copy LoggingConfig.java into the source tree, replacing custom tokens with values in build.properties. The configuration depends on "clean" because otherwise the build system will not detect changes in the configuration. -->
+	<property name="config-target-path" value="${source.dir}/me/disconnect/securefi/engine"/>
+ 
+        <chmod file="${config-target-path}/LoggingConfig.java" perm="+w"/>
+        <attrib file="${config-target-path}/LoggingConfig.java" readonly="false"/>
+   
+        <!-- Copy the configuration file, replacing tokens in the file. -->
+        <copy file="config/LoggingConfig.java" todir="${config-target-path}"
+            	  overwrite="true" encoding="utf-8">
+           	 <filterset>
+               		<filter token="CONFIG.LOGGING" value="${config.logging}"/>
+            	</filterset>
+        </copy>
+   
+       	<!-- Now set it to read-only, as we don't want people accidentally
+        editing the wrong one. NOTE: This step is unnecessary, but I do
+        it so the developers remember that this is not the original file. -->
+        <chmod file="${config-target-path}/LoggingConfig.java" perm="-w"/>
+        <attrib file="${config-target-path}/LoggingConfig.java" readonly="true"/>
+    </target>
+</project>

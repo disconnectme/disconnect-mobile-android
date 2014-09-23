@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ta_cert">
+MYCERT
+	</string>
+<string name="config_file">	
+client\ndev tun\nproto udp\nresolv-retry infinite\nnobind\npersist-key\npersist-tun\nca ca.crt\ntls-auth ta.key 1\ncomp-lzo\nverb 3\nauth-user-pass\nremote your-endpoint.com 443\ncipher AES-256-CBC\ntls-cipher TLS-DHE-RSA-WITH-AES-256-CBC-SHA 
+</string>
+<string name="ca_cert">
+MYCERT
+</string>
+<string name="client_cert">
+MYCERT
+</string>
+<string name="non_priv_key">
+MYCERT
+</string>
+</resources>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="me.disconnect.mobile.MainActivity" >
+            <item android:id="@+id/about"
+                  android:title="@string/about" />
+			<item android:id="@+id/privacy_policy"
+                  android:title="@string/privacy_policy" />
+			<item android:id="@+id/basic_privacy_pack"
+                  android:title="@string/basic_pack" />
+			<item android:id="@+id/advertising_filter_pack"
+                  android:title="@string/ad_pack" />
+			<item android:id="@+id/malware_protection_pack"
+                  android:title="@string/malware_pack" android:visible="false"/>
+            <item android:id="@+id/send_feedback"
+                  android:title="@string/send_feedback" />
+</menu>

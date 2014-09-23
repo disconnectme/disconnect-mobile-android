@@ -1,0 +1,115 @@
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_sampling"
+    android:orientation="vertical"
+    tools:context="me.disconnect.mobile.MainActivity$PlaceholderFragment" >
+<RelativeLayout
+    android:id="@+id/star_field"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2"
+    android:background="@drawable/background_collusion_off"
+   	>
+
+    <me.disconnect.mobile.ConnectButton
+        android:id="@+id/protect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_circle_off"
+        android:drawableTop="@drawable/protect_button"
+        android:background="@null"
+        android:textOn="" 
+        android:textOff=""
+        />
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+   	>
+    <TextView
+      android:id="@+id/protection_packs_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/white"
+      android:layout_centerInParent="true"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:paddingBottom="@dimen/packs_title_bottom_padding"
+      android:text="@string/protection_packs_title"
+      android:layout_alignParentTop="true"
+      />
+       <LinearLayout
+            android:id="@+id/package_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/protection_packs_title"
+        	android:background="@drawable/packages_background"
+            >
+            <me.disconnect.mobile.PackageButton
+                android:id="@+id/basic_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+         		android:drawableTop="@drawable/basic_button"
+         		android:background="@null"
+         		android:layout_weight="1"
+                android:textOn="@string/basic_pack_button_title" 
+                android:textOff="@string/basic_pack_button_title"
+                android:textColor="@color/package_button_text_color"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="@dimen/packs_title_bottom_padding"
+                />
+             <me.disconnect.mobile.PackageButton
+                android:id="@+id/ad_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+         		android:drawableTop="@drawable/ad_button"
+         		android:background="@null"
+         		android:layout_weight="1"
+                android:textOn="@string/advertising_pack_button_title"
+                android:textOff="@string/advertising_pack_button_title"
+                android:textColor="@color/package_button_text_color"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="@dimen/packs_title_bottom_padding"
+                 />
+              <me.disconnect.mobile.PackageButton
+                android:id="@+id/malware_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+         		android:drawableTop="@drawable/malware_button"
+         		android:background="@null"
+         		android:layout_weight="1"
+         		android:textOff="@string/malware_pack_button_title"
+         		android:textOn="@string/malware_pack_button_title"
+         		android:textColor="@color/package_button_text_color"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="@dimen/packs_title_bottom_padding"
+                />
+        
+        </LinearLayout>   
+
+</RelativeLayout>
+</LinearLayout>
+<include
+        android:id="@+id/overlay_ref"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/connecting_overlay" />
+  <include
+        android:id="@+id/startup_overlay_ref"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/startup_overlay"
+        android:visibility="gone"
+        />
+</FrameLayout>   

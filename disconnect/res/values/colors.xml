@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_bar_color">#009548</color>
+    <color name="disconnect_green">#009548</color>
+    <color name="disconnect_light_green">#d1e3da</color>
+    <color name="disconnect_info_screen_green">#31c779</color>
+    <color name="disconnect_red">#c64848</color>
+    <color name="disconnect_grey">#afa6a6</color>
+    <color name="white">#ffffff</color>
+    <color name="link_color">#4f4f4f</color>
+    <color name="overlay_button_outline">#4f4f4f</color>
+</resources>

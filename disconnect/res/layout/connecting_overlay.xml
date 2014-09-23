@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEEE"
+    android:gravity="center"
+    android:clickable="true"
+     >
+	<TextView
+	    android:id="@+id/connecting_text"
+	    android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/connecting_overlay_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+         />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/connecting_title"
+        android:layout_above="@id/connecting_text"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:text="@string/connecting_overlay_title"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+   <Button
+        android:id="@+id/connecting_cancel"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:layout_below="@+id/connecting_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/overlay_button_shape"
+        android:minHeight="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/connecting_overlay_cancel_button"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+   <ProgressBar
+       android:id="@+id/connecting_spinner"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/connecting_cancel"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="20dp" />
+
+</RelativeLayout>

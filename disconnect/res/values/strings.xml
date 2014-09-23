@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Disconnect</string>
+    <string name="action_settings">Settings</string>
+    <string name="protection_packs_title">Protection Packs</string>
+    <string name="basic_pack_button_title">Basic</string>
+    <string name="advertising_pack_button_title">Malvertising</string>
+    <string name="malware_pack_button_title">Malware</string>
+    
+    <string name="permission_instructions">
+        You need to authorize the VPN connection.  We don’t route your traffic through the VPN but this is how we block unwanted content.
+        If you click &quot;OK&quot;, you will next see the system dialog asking for your approval.
+    </string>
+    
+    <string name="package_alert_dialog_activate">Activate</string>
+    <string name="package_alert_dialog_deactivate">Deactivate</string>
+    <string name="package_alert_dialog_purchase">Purchase</string>
+    <string name="close">Close</string>
+    <string name="activate_package">Please activate a package first.</string>
+    
+    <string name="feed_back_email_subject">Disconnect Mobile Feedback</string>
+    
+    <string name="connecting_overlay_text">You may need to authorize the VPN connection.  We don’t route your traffic through the VPN but this is how we block unwanted content.</string>
+    <string name="connecting_overlay_title">Activating Protection</string>
+    <string name="connecting_overlay_cancel_button">Cancel</string>
+    <string name="securefi_active_message">Blocking currently powered by Secure Wireless.  Please open Secure Wireless to change any settings.</string>
+    <string name="package_description_error">Unable to display package descriptions</string>
+    
+<!--     Info pages -->
+    <string name="about_page">Disconnect was founded on a basic principle: that people should have the freedom to move about the internet &#8212; and their lives &#8212; without anyone else looking over their shoulder. The company was started in 2011 by a former Google engineer and a consumer-rights attorney. Disconnect\'s top-rated apps are used by more than 2,000,000 people every week.</string>
+	<string name="privacy_page_text">Our privacy policy, in a sentence: We don\'t collect your personal info, except your email address if you ask us to write to you. Read our entire policy at https://disconnect.me/privacy.</string>
+	<string name="basic_privacy_pack_text">The Basic Privacy Pack blocks the biggest mobile trackers. It will automatically update its filter list and you can view the current filter list here: https://disconnect.me/lists/basicfilter.\n\nThe trackers we block try to collect data about your activity by sending tracking requests to your device. Most of these tracking requests are invisible. Our technology blocks these requests globally. meaning that you are protected using an app or browsing the web on 3G, 4G or Wi-Fi.\n\nThe Basic Privacy Pack works silently in the background, and you\'ll know it\'s active by the persistent notification.</string>
+	<string name="advertising_pack_text">The Advertising Filter Pack works by blocking more than 2500 advertising services from serving ads that track you and collect your personal info. Our technology blocks these ads globally, meaning that you are protected if you are using an app or browsing the web on 3G, 4G or Wi-Fi. The app will automatically update to block additional ad trackers as we discover them. You can view the current filter list here: https://disconnect.me/lists/adfilter.\n\nThe Advertising Filter Pack works silently in the background, and you\'ll know it\'s active by the persistent notification.</string>
+	<string name="malware_pack_text">The Malware Protection Pack blocks thousands of websites suspected of malware, spyware, phishing scams and more. We crawl the Web looking for malware sites, verify these sites through Google\'s Safe Browsing API, and update the list often because everyday new malware sites pop up and others are taken down or are no longer a threat. List updates are automatic and you can view the current malware filter list here: https://disconnect.me/lists/malwarefilter.\n\nThe Malware Protection Pack works silently in the background, and you\'ll know it\'s active by the persistent notification.</string>
+	
+	<string name="learn_more">Learn More</string>
+    <string name="about">About</string>
+	<string name="privacy_policy">Privacy Policy</string>
+	<string name="basic_pack">Basic privacy pack</string>
+	<string name="ad_pack">Malvertising filter pack</string>
+	<string name="malware_pack">Malware protection pack</string>
+    <string name="other">Other</string>
+    <string name="send_feedback">Send feedback</string>
+    
+<!-- VPN connected strings -->
+	<string name="vpn_connected_basic">Currently blocking tracking</string>
+	<string name="vpn_connected_ads">Currently blocking advertisements</string>
+	<string name="vpn_connected_malware">Currently blocking malware</string>
+	<string name="vpn_connected_basic_ads">Currently blocking tracking and advertisements</string>
+	<string name="vpn_connected_basic_malware">Currently blocking tracking and malware</string>
+	<string name="vpn_connected_ads_malware">Currently blocking advertisements and malware</string>
+	<string name="vpn_connected_basic_ads_malware">Currently blocking tracking, advertisements and malware</string>
+</resources>
