@@ -6,7 +6,7 @@ See strings_non_translate.xml for details.
 
 ## License
 
-Copyright 2010–2014 Disconnect, Inc.
+Copyright 2014 Disconnect, Inc.
 
 This program is free software, excluding the brand features and third-party
 portions of the program identified in the “Exceptions” below: you can
